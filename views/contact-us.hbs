@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/vision.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Contact-us page</title>
+</head>
+
+<body>
+    {{>navbar data = details}}
+
+    <div class="title white">
+        <br>
+        <h2 class="titleText">Contact us</h2>
+    </div>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>66/1, Mazzanine Floor, Beside Abhijeet
+                            Developer, Ashish Apartment, Abhayankar Road, Opp.
+                            Anandashram Bhojnalay,</h5>
+                        <p>Dhantoli, Nagpur - 440012 MH, ,IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+91- 898-323-0676 / +01- 786-544-2007</h5>
+                        <p>Monday to Saturday, 10 AM to 9 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>Info@TripodTechnologies.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form class="form buttons" action="/process-contact-form" method="post">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" >
+                    <input type="email" name="email" id="email" placeholder="Enter Email Address" >
+                    <input type="text" name="subject" id="subject" placeholder="Enter Your Subject" >
+                    <textarea rows="8" name="message" id="message" placeholder="Message" ></textarea>
+                    <button type="submit" class="hero-btn red-btn buttons" id="insert">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    {{>footer}}
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
